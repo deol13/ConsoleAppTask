@@ -15,7 +15,7 @@ namespace ConsoleAppTask
         {
             Console.WriteLine("Hello user, welcome to the main menu!\n");
             items.FunctionItems();
-            Console.WriteLine("\nWhat function do you want to start?");
+            Console.WriteLine("\nWhich function do you want to start?");
         }
 
         //Starts the different functions based on what was picked.
