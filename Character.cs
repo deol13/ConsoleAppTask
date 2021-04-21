@@ -1,4 +1,7 @@
-﻿
+﻿/// <summary>
+/// Dennis Olsen
+/// </summary>
+
 namespace ConsoleAppTask
 {
     class Character

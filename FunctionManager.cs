@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
+/// <summary>
+/// Dennis Olsen
+/// </summary>
+
 namespace ConsoleAppTask
 {
     class FunctionManager

@@ -1,5 +1,8 @@
 ﻿using System;
 
+/// <summary>
+/// Dennis Olsen
+/// </summary>
 
 namespace ConsoleAppTask
 {

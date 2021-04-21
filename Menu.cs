@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
+/// <summary>
+/// Dennis Olsen
+/// </summary>
 
 namespace ConsoleAppTask
 {
