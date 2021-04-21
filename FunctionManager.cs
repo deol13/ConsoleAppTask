@@ -20,7 +20,10 @@ namespace ConsoleAppTask
         {
             Console.WriteLine("Input a first name, last name and age!");
             string input = Console.ReadLine();
-            Console.WriteLine(input);
+            string[] inputArray = input.Split();
+
+            Console.Write("Name: " + inputArray[0] + ' ' + inputArray[1]);
+            Console.Write("     Age: " + inputArray[2] + "\n");
         }
 
         //If the text color in cmd isn't magenta, change it to magenta, if it is change it to white
@@ -105,9 +108,9 @@ namespace ConsoleAppTask
 
                         //Gives a hint if the answer wasn't correct
                         if (randValue > value)
-                            Console.WriteLine("Guessed value is too small a value!");
+                            Console.WriteLine("Guessed value is to small!");
                         else if (randValue < value)
-                            Console.WriteLine("Guessed value is too large a value!");
+                            Console.WriteLine("Guessed value is to large!");
                         else
                         {
                             Console.WriteLine("You guessed correctly!");
@@ -141,6 +144,8 @@ namespace ConsoleAppTask
                 return false;
             }
 
+            Console.WriteLine("\nFile path: " + Path.GetFullPath(fileName));
+
             return true;
         }
 
@@ -152,8 +157,13 @@ namespace ConsoleAppTask
             //Incase an error occurs
             try
             {
-                //We only have one line to read
-                text = File.ReadAllText(fileName);
+                if (File.Exists(fileName))
+                    text = File.ReadAllText(fileName); //We only have one line to read
+                else
+                {
+                    Console.WriteLine("Error: File doesn't exist!");
+                    return false;
+                }
             }
             catch (Exception)
             {
@@ -287,7 +297,7 @@ namespace ConsoleAppTask
 
             while (!approvedInput)
             {
-                Console.WriteLine("Type in a palindrom, only the alphabetic letters a-ö is acceptable!");
+                Console.WriteLine("Type in a palindrome, only the alphabetic letters a-ö is accepted!");
                 string input = Console.ReadLine();
 
                 string[] word = input.Split();
@@ -395,6 +405,7 @@ namespace ConsoleAppTask
             while (!valueOrNot)
             {
                 int tmp = 0;
+                valueOrNot = true;
 
                 Console.WriteLine("Input any number of integer values with a , between each.");
                 string input = Console.ReadLine();
@@ -407,6 +418,7 @@ namespace ConsoleAppTask
                     if (!Int32.TryParse(str, out tmp)) //Not a value so we break out from the foreach
                     {
                         Console.WriteLine("Error: Invalid input, only integers allowed!\n");
+                        valueOrNot = false;
                         break;
                     } 
                     else if(tmp %2 == 0) //Check for even or odd

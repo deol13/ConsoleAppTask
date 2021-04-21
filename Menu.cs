@@ -123,7 +123,7 @@ namespace ConsoleAppTask
                     break;
             }
 
-            Console.WriteLine("\nPress any key to try again!");
+            Console.WriteLine("\nPress any key to return to main menu!");
             Console.ReadKey();
 
             return true;
@@ -150,8 +150,8 @@ namespace ConsoleAppTask
             items.Add("8: Reads the file from function 7 then writes it out on the cmd."); //8
             items.Add("9: User inputs a decimal value, then gets back the square root of, raised to 2 and 10 as output."); //9
             items.Add("10: Outputs multiplication tables 1 through 10."); //10
-            items.Add("11: Fylls an array with randomized values, then fylls a second one with same values but raised order "); //11
-            items.Add("12: Checks if the users input is an palindrom"); //12
+            items.Add("11: Fills an array with randomized values, then fills a second one with same values but raised order "); //11
+            items.Add("12: Checks if the users input is an palindrome"); //12
             items.Add("13: User inputs two integer values, all the values between the chosen values are written out."); //13
             items.Add("14: User inputs in a bunch of integer values(seprate each value with a comma), all the values are then orginized between odd & even and written out"); //14
             items.Add("15: User inputs in a bunch of integer values(seprate each value with a comma), all of them are added together and then written out"); //15
