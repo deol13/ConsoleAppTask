@@ -18,12 +18,26 @@ namespace ConsoleAppTask
         //Task two, takes a line as input and writes it out again
         public void FunctionTwo()
         {
-            Console.WriteLine("Input a first name, last name and age!");
-            string input = Console.ReadLine();
-            string[] inputArray = input.Split();
+            bool continueLooping = true;
 
-            Console.Write("Name: " + inputArray[0] + ' ' + inputArray[1]);
-            Console.Write("     Age: " + inputArray[2] + "\n");
+            while (continueLooping)
+            {
+                Console.WriteLine("Input a first name, last name and age!");
+                string input = Console.ReadLine();
+                string[] inputArray = input.Split();
+
+                if (inputArray.Length == 3)
+                {
+                    Console.Write("\nName: " + inputArray[0] + ' ' + inputArray[1]);
+                    Console.Write("     Age: " + inputArray[2] + "\n");
+
+                    continueLooping = false;
+                }
+                else if (inputArray.Length < 3)
+                    Console.WriteLine("\nError: You didn't input enough info!\n");
+                else if (inputArray.Length > 3)
+                    Console.WriteLine("\nError: You input to much info!\n");
+            }
         }
 
         //If the text color in cmd isn't magenta, change it to magenta, if it is change it to white

@@ -1,5 +1,5 @@
-D:\Programming Apps\Projects\ConsoleAppTask\bin\Debug\ConsoleAppTask.exe.config
 D:\Programming Apps\Projects\ConsoleAppTask\bin\Debug\ConsoleAppTask.exe
+D:\Programming Apps\Projects\ConsoleAppTask\bin\Debug\ConsoleAppTask.exe.config
 D:\Programming Apps\Projects\ConsoleAppTask\bin\Debug\ConsoleAppTask.pdb
 D:\Programming Apps\Projects\ConsoleAppTask\obj\Debug\ConsoleAppTask.csproj.CoreCompileInputs.cache
 D:\Programming Apps\Projects\ConsoleAppTask\obj\Debug\ConsoleAppTask.exe
